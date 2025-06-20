@@ -22,15 +22,14 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow requests without origin (like Postman or direct API calls)
     if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true); // Allow the origin
+      callback(null, true); // This allows the origin
     } else {
-      callback(new Error('Not allowed by CORS'), false); // Deny the origin
+      callback(new Error('Not allowed by CORS'), false); // This denies the origin
     }
   },
   methods: 'GET,POST,PUT,DELETE',
-  credentials: true, // Enable cookies (if needed for session handling)
+  credentials: true, // Enable cookies for session handling
 }));
 
 app.use(express.json({ extended: false }));
@@ -45,10 +44,9 @@ console.log(listEndpoints(app));  // This will print all routes to the console
 
 // This route will respond to requests made to the root URL
 app.get('/', (req, res) => {
-  res.send('Welcome to the backend!');
+  res.send("Welcome to Piece of Cake Bakery's backend!");
 });
 
 // Enviromental Variables
 const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server has opened on port ${PORT}`));
