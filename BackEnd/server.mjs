@@ -25,6 +25,7 @@ const allowedOrigins = [
   'http://localhost:5173', // Local host port
   'https://final-project-cake-website.vercel.app', //Vercel frontend
   'https://pieceofcakebakery-hka5b6cabbhtf9af.northcentralus-01.azurewebsites.net/', // Azure deployment
+  'pieceofcakebakery-hka5b6cabbhtf9af.northcentralus-01.azurewebsites.net', // Another Azure link
 ];
 
 app.use(cors({
