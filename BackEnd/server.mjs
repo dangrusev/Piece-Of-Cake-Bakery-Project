@@ -1,4 +1,6 @@
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import connectDB from './config/db.mjs';
 import dotenv from 'dotenv';
 import authRoutes from './routes/api/auth.mjs';
@@ -12,12 +14,16 @@ dotenv.config();
 //Initialize our app variable with Express
 const app = express();
 
+//Used for Azure deployement
+const fileName = fileURLToPath(import.meta.url);
+const dirname = path.dirname(fileName);
+
 //Connect to the Mongo Database
 connectDB();
 
 const allowedOrigins = [
-  'http://localhost:5173', // Local dev
-  'https://final-project-cake-website.vercel.app', //live Vercel frontend
+  'http://localhost:5173', // Local host port
+  'https://final-project-cake-website.vercel.app', //Vercel frontend
 ];
 
 app.use(cors({
@@ -42,14 +48,14 @@ app.use(express.json({ extended: false }));
 app.use('/api/auth', authRoutes);
 app.use('/api/ordersRoute', ordersRoutes); 
 app.use('/api/stripe', stripe);
-
+app.use(express.static(path.join(dirname, 'FrontEnd/dist')));
+app.get('*',(req, res) => { res.sendFile(path.join(dirname, 'FrontEnd/dist', 'index.html'));});
 
 console.log(listEndpoints(app));  // This will print all routes to the console
 
 // This route will respond to requests made to the root URL
-app.get('/', (req, res) => {
-  res.send('Welcome to the backend!');
-});
+// app.get('/', (req, res) => {
+  // res.send('Welcome to the backend!');}
 
 // Enviromental Variables
 const PORT = process.env.PORT || 3000;
