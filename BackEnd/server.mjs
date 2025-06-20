@@ -18,6 +18,7 @@ connectDB();
 const allowedOrigins = [
   'http://localhost:5173', // Local host link
   'https://final-project-cake-website.vercel.app', // Vercel frontend link
+  'https://kind-beach-07ad0841e.1.azurestaticapps.net', // Azure frontend link
 ];
 
 app.use(cors({
