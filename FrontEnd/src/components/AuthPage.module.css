@@ -1,0 +1,14 @@
+.authContainer {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+  }
+  .authContainer input,
+  .authContainer button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }

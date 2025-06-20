@@ -1,0 +1,223 @@
+Resources and examples for the FrontEnd to help us. Sources are organized by each file. Most sources in each file category can also be used for other code:
+
+
+========================
+React Sources: 
+========================
+
+https://reactrouter.com/6.28.0/start/tutorial (Basic React tutorial). 
+
+https://react.dev/learn/describing-the-ui (Shows basics of React. Also starting page).
+
+https://react.dev/reference/react-dom/components (Start of React hooks, how to do imports, how to export, etc.).
+
+https://legacy.reactjs.org/docs/forms.html (React input, select, and textarea).
+
+https://reactrouter.com/api/hooks/useNavigate (Shows how to use useNavigate).
+
+https://api.reactrouter.com/v7/functions/react_router.useLocation (Shows an example of how useLocation can be handled). 
+
+https://legacy.reactjs.org/docs/handling-events.html (Shows how to use React Event handlers).
+
+https://react.dev/learn/responding-to-events (More on event handling). 
+
+https://react.dev/learn/conditional-rendering (Shows how to display different things based on a condition. Conditions will most likely be user selections). 
+
+https://react.dev/learn/sharing-state-between-components (Shows parent and child components. Shows how to handle data from multiple parts). 
+
+https://react-hook-form.com/get-started (Shows more on form handling).
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage (Shows how to use localStorage to get stored data).
+
+https://www.w3schools.com/react/react_useeffect.asp (Shows how to use useEffect. Useful for session timeouts).
+
+https://github.com/sksabbirhossain/megamart-ecommerce/tree/main/src (Example GitHub website that used React. Has front and back end).
+
+https://github.com/GeorgiaCD/REACT-Bakery (Bakery website example that uses React).
+
+https://github.com/topics/react-website (More example websites to explore if needed).
+
+
+
+
+========================
+CSS Sources:
+========================
+
+https://github.com/mdn/css-examples (Shows multiple different examples of CSS styling. Some styling is implemented in the html code while others have their own separate files).
+
+https://github.com/joeshub/css-in-react/tree/master (Shows more examples. These examples specifically uses React).
+
+
+
+
+========================
+Axios Sources (For HTTP requests):
+========================
+
+https://github.com/axios/axios/tree/v1.x (Offical axios GitHub. Has multiple examples of axios implementation).
+
+https://dev.to/codexam/how-to-use-axios-with-react-a-beginners-guide-13n2 (Shows a tutorial of how to use axios).
+
+https://www.npmjs.com/package/react-axios (Shows additional basics and setup of axios).
+
+https://letsreact.org/axios-in-react (Shows error catching and GET requests).
+
+https://github.com/elaad24/react-auth-best-practice-/blob/master/reactAuth/src/api/apiClient.ts (Shows an example of axios implementation. This is one example, this repository could have more examples. Repository also contains additional examples for other code needed to be written).
+
+
+
+
+========================
+Stripe Sources:
+========================
+
+https://docs.stripe.com/sdks/stripejs-react (Shows overview of Stripe Elements).
+
+https://github.com/stripe/stripe-js (Shows a GitHub of Stripe code examples. See the README for more information. Also contains additional sources if needed).
+
+https://stackoverflow.com/questions/64719437/uncaught-in-promise-error-invalid-prop-stripe-supplied-to-elements-we-re (Shows how to import Stripe elements).
+
+https://docs.stripe.com/payments/accept-a-payment?platform=web&ui=elements (Shows more on how to implement Stripe).
+
+
+
+
+========================
+Header Sources:
+========================
+
+https://github.com/scripty08/react-header/blob/master/src/Header.jsx (Shows how to implement a separate header file. This is to have the header stay on for each page).
+
+
+
+========================
+Custom Page Sources:
+========================
+
+https://github.com/jeffbass9/price-calculator/blob/master/script.js (Example for price implementation)
+
+https://stackoverflow.com/questions/59813926/how-can-i-store-and-update-multiple-values-in-react-usestate (Storing values in React)
+
+https://stackoverflow.com/questions/51626700/in-react-redux-how-to-calculate-a-total-price-for-a-shopping-cart (Use for shopping cart or checkout page).
+
+https://stackoverflow.com/questions/72047296/how-to-display-corresponding-image-from-selected-item-in-react-using-hooks (Shows how to put images for each option).
+
+https://www.w3schools.com/jsref/jsref_tofixed.asp (Shows how to have a fixed decimal for the prices).
+
+https://stackoverflow.com/questions/69741043/calculate-total-price-in-react-redux (Shows how to calculate all of the user selected options).
+
+https://hello-sunil.in/react-controlled-components-form-validation (Shows form/field validation. Also shows format and length validation which can be useful for later).
+
+https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications (Shows how to have an upload image box for user cake designs).
+
+https://stackoverflow.com/questions/69714423/how-do-you-pass-data-when-using-the-navigate-function-in-react-router-v6 (Shows how to pass data to the payment page).
+
+https://stackoverflow.com/questions/68877992/retrieving-state-from-react-router-v6-navigate (Shows how to use "state" for data passing).
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat (Shows how to pass the number for the price).
+
+https://github.com/vikikukic99/Cake-Customizer-React/blob/main/src/components/CakeModel.tsx (Shows a small example of a cake customizer).
+
+https://github.com/agathaco/react-cake-builder/tree/master/src/components (Shows a much more in depth cake customizer).
+
+
+
+
+========================
+Payment Page Sources:
+========================
+
+https://www.techgalery.com/2021/02/how-to-create-html-input-date-time-in.html (Shows how to have users input date and time. This is for delivery information). 
+
+https://github.com/stripe/react-stripe-js/tree/master/examples/hooks (Shows examples of payment pages, implementing Stripe, user input for card information, etc.).
+
+
+
+========================
+Confirmation Page Sources: 
+========================
+
+https://github.com/BayeedHZihan/order-management-frontend-react/tree/master/src/components/orders (Shows multiple examples of a basic confirmation page).
+
+https://stackoverflow.com/questions/63124924/how-to-redirect-to-after-x-seconds-using-react-router-dom (Shows an example of a React timeout redirect feature).
+
+
+
+========================
+Image Transitions Sources:
+========================
+
+
+https://www.npmjs.com/package/react-simple-image-slider (Shows a simple example of how to slide from one image to another).
+
+https://stackoverflow.com/questions/73952210/how-to-change-image-every-4-seconds-with-react-hooks (Shows how to switch images on a time interval). 
+
+https://github.com/pmndrs/react-three-fiber/discussions/2168 (Shows a discussion of implementing image transitions).
+
+
+
+========================
+Authorization Page Sources: 
+========================
+
+
+https://jasonwatmore.com/post/2019/02/01/react-role-based-authorization-tutorial-with-example (Shows multiple examples of how to create a login page).
+
+https://medium.com/@ghimiresamana666/authentication-and-authorization-in-react-8fc76a496ba0 (Shows more examples of how to create a login page in React).
+
+https://stackoverflow.com/questions/64063348/react-password-validation-onchange (Shows more details on password validation. Also shows more details on form inputs for user's email and password).
+
+https://github.com/ZachyDev/React-User-Login-and-Authentication-with-Axios/blob/main/auth/src/components/Login.js (Shows a GitHub example of a login/authorization page. Also uses axios).
+
+
+========================
+Checkout Form Page:
+========================
+
+
+https://docs.stripe.com/payments/payment-intents (Shows how to create a PaymentIntent for the checkout process).
+
+https://github.com/stripe/react-stripe-js/blob/master/examples/hooks/9-Payment-Element.js (Shows examples of React hooks and how it is used for checkout. Also shows a template of a checkout form).
+
+
+
+========================
+Private Route Sources:
+========================
+
+https://github.com/Standard-IO/protected-routes-react/blob/main/frontend/src/components/ProtectecRoute.jsx (Shows a small example of how to implement a login requirement). 
+
+https://github.com/akursat/react-router-example/blob/main/src/PrivateRoute.tsx (Shows another example of a private route). 
+
+
+
+
+========================
+AuthContext.jsx Sources:
+========================
+
+https://github.com/jakubdrozdek/react-auth-context-example/blob/master/src/contexts/AuthContext.js (Shows example of how to set up context API).
+
+https://github.com/mbozkaya/react-authentication-with-context-api/blob/main/src/contexts/AuthContext.js (Shows another more in depth example).
+
+
+
+========================
+Main.jsx Sources: 
+========================
+
+https://stackoverflow.com/questions/75931792/react-router-v6-10-authcontext-createbrowserrouter-problem-with-navigate (Shows how to set up Main).
+
+https://github.com/Barbarpotato/React-Router-Fundamental/blob/main/src/main.jsx (Shows another example of setting up Main).
+
+
+========================
+App.jsx Sources:
+========================
+
+https://github.com/akursat/react-router-example/blob/main/src/App.tsx (Shows example of how to import pages and create route paths).
+
+
+
+

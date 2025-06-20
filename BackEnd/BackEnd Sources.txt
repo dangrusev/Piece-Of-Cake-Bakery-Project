@@ -1,0 +1,133 @@
+Resources and examples for the BackEnd to help us:
+
+========================
+Mongoose Sources:
+========================
+https://mongoosejs.com/docs/guide.html (Official documentation for Mongo schemas).
+
+
+
+========================
+Connecting to Mongoose Sources:
+========================
+https://github.com/bradtraversy/devcamper-api/blob/master/config/db.js (Shows a small example of a db.js file connecting to Mongoose).
+
+https://github.com/D-aniela/mongo_connection_setup/tree/main/src (Shows a small tutorial of connecting to Mongoose database).
+
+https://github.com/D-aniela/mongo_connection_setup/blob/main/src/server.ts (Same GitHub as above, but shows server implementation).
+
+https://www.mongodb.com/docs/drivers/node/master/crud/query/retrieve/ (Official Mongo code examples).
+
+
+
+
+========================
+Orders Model BackEnd Sources:
+========================
+https://github.com/bradtraversy/proshop_mern/blob/master/backend/models/orderModel.js (Shows example of BackEnd code handling shipping data, payment data, etc.).
+
+
+========================
+Users Model BackEnd Sources:
+========================
+https://github.com/madhums/node-express-mongoose/blob/master/app/models/user.js (Shows example of login BackEnd).
+
+https://github.com/bradtraversy/devconnector_2.0/blob/master/models/User.js (Shows a model of a login).
+
+https://github.com/bradtraversy/devconnector_2.0/blob/master/routes/api/users.js (Same GitHub as above, but shows the api/routes of the login).
+
+https://www.slingacademy.com/article/how-to-validate-email-addresses-in-mongoose/ (Shows Mongoose email validation).
+
+
+
+========================
+Authorization Route Sources:
+========================
+https://www.npmjs.com/package/bcrypt (Shows how to implement bcrypt for password hashing).
+
+https://github.com/bradtraversy/mern-auth/blob/master/backend/routes/userRoutes.js (Shows example of a user/login route).
+
+https://github.com/sahat/hackathon-starter/blob/master/models/User.js (More examples of login routes. This GitHub contains plenty of examples for other BackEnd code).
+
+
+========================
+Orders Route Sources:
+========================
+
+https://github.com/basir/node-react-ecommerce/blob/master/backend/routes/orderRoute.js (Shows example of an order route).
+
+https://github.com/basir/node-react-ecommerce/blob/master/backend/routes/productRoute.js (Same GitHub as above. Maybe can be combined with order route for simplicity). 
+
+https://github.com/HasanBakar/Orders-management-backend/tree/main/src (Shows a GitHub that is designed for order BackEnds. Code is segmented amongst multiple files).
+
+========================
+Stripe Route Sources:
+========================
+https://github.com/Chavh/stripe-payment-intent/blob/main/public/script.js (Shows example of Stripe route).
+
+https://github.com/raveenrv904/Stripe-Payment/blob/main/controllers/stripeController.js (Shows another example of a Stripe controller).
+
+https://github.com/stripe/stripe-node/tree/master (Official Stripe GitHub for node.js).
+========================
+Additonal Sources
+========================
+
+========================
+General Roadmaps
+========================
+- Dave Gray's Web Dev Roadmap (Free PDF): https://bit.ly/DaveGrayWebDevRoadmap
+- The Odin Project (Full-Stack JS Path): https://www.theodinproject.com/paths/full-stack-javascript
+- freeCodeCamp Back End Development and APIs: https://www.freecodecamp.org/learn/back-end-development-and-apis/
+
+========================
+YouTube Tutorials
+========================
+- Dave Gray - Node.js Tutorial for Beginners:
+  https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw
+
+- Dave Gray - MongoDB for Beginners:
+  https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit
+
+- Dave Gray - Express.js Full Course:
+  https://www.youtube.com/watch?v=G8uL0lFFoN0
+
+- Backend Simplified (CodeWithYash):
+  https://www.youtube.com/playlist?list=PLKhlp2qtUcSYqzM-ZUO6zG0GXx5Bw5rYy
+
+- Web Dev Simplified - JWT Auth Tutorial:
+  https://www.youtube.com/watch?v=2jqok-WgelI
+
+========================
+Documentation & Books
+========================
+- Node.js Official Docs: https://nodejs.org/en/docs
+- Express.js Docs: https://expressjs.com/
+- MongoDB Manual: https://www.mongodb.com/docs/manual/tutorial/
+- .env (dotenv) package: https://www.npmjs.com/package/dotenv
+- Node.js Design Patterns Book:
+  https://www.oreilly.com/library/view/nodejs-design-patterns/9781839214110/
+
+========================
+Deployment & Tools
+========================
+- Render (Free Node.js Hosting): https://render.com/docs/deploy-node-express-app
+- Railway (Backend Hosting): https://railway.app/
+- Postman (API Testing): https://www.postman.com/
+- Thunder Client (VSCode REST Client): https://www.thunderclient.com/
+
+========================
+Practice Project Ideas
+========================
+- Task Manager API (CRUD, MongoDB, Auth)
+- Blog API with login/logout
+- Expense Tracker API
+- Chat App using Socket.io
+- File Upload Service with Multer
+
+========================
+GitHub Repositories
+========================
+- Awesome Node.js: https://github.com/sindresorhus/awesome-nodejs
+- Node Best Practices: https://github.com/goldbergyoni/nodebestpractices
+
+

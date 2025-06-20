@@ -1,0 +1,19 @@
+.optionImage {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    border-color: #ff7043;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: azure;
+}
+.textbox {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
