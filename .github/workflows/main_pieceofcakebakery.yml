@@ -32,7 +32,7 @@ jobs:
       - name: Copy
         run: |
           if not exist BackEnd\FrontEnd mkdir BackEnd\FrontEnd
-          xcopy FrontEnd\build BackEnd\FrontEnd\build /E /I /Y
+          xcopy FrontEnd\dist BackEnd\FrontEnd\dist /E /I /Y
         shell: cmd
 
       - name: BackEnd
