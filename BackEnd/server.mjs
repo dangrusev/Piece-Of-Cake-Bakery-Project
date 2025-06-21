@@ -21,6 +21,17 @@ const allowedOrigins = [
   'https://kind-beach-07ad0841e.1.azurestaticapps.net', // Azure frontend link
 ];
 
+app.options('*', (req, res) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin);
+  }
+  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.sendStatus(204);
+});
+
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin) {callback(null, true); // This allows the origin
