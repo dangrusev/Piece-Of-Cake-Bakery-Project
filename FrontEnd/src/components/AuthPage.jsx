@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
 import styles from './AuthPage.module.css';
+const corsAPI = 'https://pieceofcakebakerybackend-agbkfxenccbbh5gg.centralus-01.azurewebsites.net';
 
 const AuthPage = () => {
   const navigate = useNavigate();
@@ -31,14 +32,14 @@ const AuthPage = () => {
           return setError('Passwords do not match');
         }
 
-        const res = await axios.post('https://final-project-cake-website.onrender.com/api/auth/register', {
+        const res = await axios.post(`${corsAPI}/api/auth/register`, {
           name: formData.name,
           email: formData.email,
           password: formData.password,
         });
         login(res.data.user);
       } else {
-        const res = await axios.post('https://final-project-cake-website.onrender.com/api/auth/login', {
+        const res = await axios.post(`${corsAPI}/api/auth/login`, {
           email: formData.email,
           password: formData.password,
         });
