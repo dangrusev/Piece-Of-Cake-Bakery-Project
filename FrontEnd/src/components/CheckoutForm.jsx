@@ -15,7 +15,7 @@ const CheckoutForm = ({ amount, orderDetails, deliveryDate, paymentSuccess }) =>
     e.preventDefault();
     setProcessing(true);
     setTimeout(async() => {
-      try {await axios.post('https://final-project-cake-website.onrender.com/api/ordersRoute', {
+      try {await axios.post('https://pieceofcakebakerybackend-agbkfxenccbbh5gg.centralus-01.azurewebsites.net/api/ordersRoute', {
         userId, items: [{productId: "customCake", quantity: 1}], total: amount, shippingAddress: {line1: orderDetails.address || "", city: orderDetails.city || "", state: orderDetails.state || "", zip: orderDetails.zip || "", country: "United States of America"}
       });
     
