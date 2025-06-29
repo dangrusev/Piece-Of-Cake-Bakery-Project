@@ -10,15 +10,23 @@ const CheckoutForm = ({ amount, orderDetails, deliveryDate, paymentSuccess }) =>
   const elements = useElements();
   const navigate = useNavigate();
   const [processing, setProcessing] = useState(false);
+  const userId = localStorage.getItem("userId");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setProcessing(true);
-    setTimeout(() => {
-      localStorage.setItem('latestOrder', JSON.stringify({
-        total: amount, deliveryDate: deliveryDate || null,}));
-    paymentSuccess();
-    }, 3000); // Simulates payment with Stripe. Also simulates a 3 second processing wait
-  };
+    setTimeout(async() => {
+      try {await axios.post('https://final-project-cake-website.onrender.com/api/ordersRoute', {
+        userId, items: [{productId: "customCake", quantity: 1}], total: amount, shippingAddress: {line1: orderDetails.address || "", city: orderDetails.city || "", state: orderDetails.state || "", zip: orderDetails.zip || "", country: "United States of America"}
+      });
+    
+        localStorage.setItem('latestOrder', JSON.stringify({
+          total: amount, deliveryDate: deliveryDate || null,}));
+
+        paymentSuccess();
+        } catch (error) {console.error("Error: Issue with submitting your order:", error); 
+        alert("Error");
+        setProcessing(false);}}, 3000); // Simulates payment with Stripe. Also simulates a 3 second processing wait
+      };
 
   return (
     <form onSubmit={handleSubmit}>
