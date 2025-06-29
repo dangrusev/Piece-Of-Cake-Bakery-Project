@@ -28,10 +28,10 @@ app.use(cors({
     else {callback(new Error('Not allowed by CORS'), false); // This denies the origin
          }
   },
-  methods: 'GET,POST,PUT,DELETE',
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   credentials: true, // Enable cookies for session handling
 }));
-
+app.options('*', cors());
 app.use(express.json({ extended: false }));
 
 //Routes
