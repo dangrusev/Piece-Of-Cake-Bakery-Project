@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 import './CustomPage.css';
 
 function CustomPage() {
@@ -413,17 +414,20 @@ function CustomPage() {
 
         <section id="paymentPage">
           <h2>Next Step</h2>
-          <button onClick={() => { 
+          <button onClick={async () => { 
             if (!shape || !size || !layer || !flavor || !frostingColor1 || !frostingColor2 || !frostingColor3 ) {
             alert("Please select an option in each field to continue!");
             return; 
           }
+          const orderDetails = {shape, size, layer, flavor, frostingColor1, frostingColor2, frostingColor3, userFrostingDesign, cakeText, cakeDecor,};
+          const userId = "6861b5c15c6bf55b651c4c33";
+          const userOrder = {userId, totalPrice: parseFloat(calculatePrice()), orderDetails, deliveryDate: new Date(),};
+          
+          try {const orderResponse = await axios.post('https://pieceofcakebakerybackend-agbkfxenccbbh5gg.centralus-01.azurewebsites.net/api/orderSummary', userOrder);
             navigate("/PaymentPage", {
-              state: {totalPrice: parseFloat(calculatePrice()) * 100,
-                orderDetails: {shape, size, layer, flavor, frostingColor1, frostingColor2, frostingColor3, userFrostingDesign, cakeText, cakeDecor}
-              
-              }
+              state: {totalPrice: parseFloat(calculatePrice()) * 100, orderDetails,},
             });
+          } catch (error) {alert("Error in submitting your order. Please try again.");}
           }}>
             Continue to Payment Method
           </button>
