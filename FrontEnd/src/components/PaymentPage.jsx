@@ -12,6 +12,10 @@ function PaymentPage() {
 	const location = useLocation(); // Needed to gather order data from the custom page
 	const {totalPrice = 0, orderDetails = {} } = location.state || {}; // The price will display as $0.00. Will cut off past 2 decimal points. 
 	const [deliveryDate, setDeliveryDate] = useState('');
+	const [address, setAddress] = useState('');
+	const [city, setCity] = useState('');
+	const [state, setState] = useState('');
+	const [zip, setZip] = useState('');
 	const payment = () => {navigate('/ConfirmationPage');};
 	const summaryLabels = {
 		rectangle: "Rectangle",
@@ -70,12 +74,12 @@ function PaymentPage() {
         			<h2>Enter your delivery address below.</h2>
         			<p>
         				<label htmlFor="address">Street Address</label>
-        				<input type="text" id="address" name="address" placeholder="Enter your street address" />
+        				<input type="text" id="address" name="address" placeholder="Enter your street address" value={address} onChange={(e) => setAddress(e.target.value)}/>
 				</p>
         
         			<p>
         				<label htmlFor="state">State</label>
-                                <select id="state" name="state">
+                                <select id="state" name="state" value={state} onChange={(e) => setState(e.target.value)}>
             					<option value="Alabama">AL</option>
             					<option value="Alaska">AK</option>
             					<option value="Arizona">AZ</option>
@@ -131,12 +135,12 @@ function PaymentPage() {
         
         			<p>
         				<label htmlFor="city">City</label>
-        				<input type="text" id="city" name="city" placeholder="Enter your city"/>
+        				<input type="text" id="city" name="city" placeholder="Enter your city" value={city} onChange={(e) => setCity(e.target.value)}/>
 				</p>
 
         			<p>
         				<label htmlFor="zip">Zip Code</label>
-        				<input type="text" id="zip" name="zip" placeholder="Enter your zip code"/>
+        				<input type="text" id="zip" name="zip" placeholder="Enter your zip code" value={zip} onChange={(e) => setZip(e.target.value)}/>
 				</p>
 
     			</section>
@@ -151,7 +155,7 @@ function PaymentPage() {
     			<section id="paymentMethod">
         			<h2>Enter your payment information below.</h2>
         			<Elements stripe={stripeLoad}>
-					<CheckoutForm amount={totalPrice} orderDetails={orderDetails} deliveryDate={deliveryDate} paymentSuccess={payment} />
+					<CheckoutForm amount={totalPrice} orderDetails={{...orderDetails, address, city, state, zip}} deliveryDate={deliveryDate} paymentSuccess={payment} />
           		</Elements>
         	</section>
 
