@@ -14,7 +14,7 @@ const OrderSchema = new mongoose.Schema({
   ],
   total: Number,
   shippingAddress: {
-    line1: String,
+    address: String,
     city: String,
     state: String,
     zip: String,
