@@ -6,6 +6,7 @@ import ordersRoutes from './routes/api/ordersRoute.mjs';
 import cors from 'cors';
 import listEndpoints from 'express-list-endpoints';
 import stripe from './routes/api/Stripe.mjs';
+import orderSummaryRoutes from './routes/api/orderSummary.mjs';
 
 dotenv.config();
 
@@ -37,6 +38,7 @@ app.use(express.json({ extended: false }));
 app.use('/api/auth', authRoutes);
 app.use('/api/ordersRoute', ordersRoutes); 
 app.use('/api/stripe', stripe);
+app.use('/api/orderSummary', orderSummaryRoutes);
 
 
 console.log(listEndpoints(app));  // This will print all routes to the console
