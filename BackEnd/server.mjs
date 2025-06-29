@@ -31,7 +31,6 @@ app.use(cors({
   methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   credentials: true, // Enable cookies for session handling
 }));
-app.options('*', cors());
 app.use(express.json({ extended: false }));
 
 //Routes
