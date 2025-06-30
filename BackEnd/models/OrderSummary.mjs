@@ -32,5 +32,6 @@ const OrderSummary = new mongoose.Schema({
       default: 'pending',
     },
   }, { timestamps: true });
-  
-  export default mongoose.model('OrderSummary', OrderSummary);
+
+// Schema
+export default mongoose.model('OrderSummary', OrderSummary);
