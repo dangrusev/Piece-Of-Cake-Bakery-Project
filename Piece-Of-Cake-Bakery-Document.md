@@ -19,7 +19,7 @@ Welcome to the official GitHub repository for the Piece of Cake Bakery project! 
 
 # Technology Overview
 - Frontend: React, HTML, CSS, JavaScript, Stripe (Payment processing), Axios (Http request handling)
-- Backend: Node.js, Express.js, CORS Middleware
+- Backend: Node.js, Express.js, CORS Middleware, Bcrypt (Password hashing), JSON, mongoose (Database)
 - Database: MongoDB 
 - Version Control: Git and GitHub
 - Deployment: Azure App Services (Backend), Azure Static Web Apps (Frontend)  
