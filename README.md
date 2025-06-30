@@ -5,9 +5,9 @@
 # How to Run the Project Using Azure
 Copy and paste the following links to your browser:
 
-FrontEnd: https://kind-beach-07ad0841e.1.azurestaticapps.net
+- FrontEnd: https://kind-beach-07ad0841e.1.azurestaticapps.net
 
-BackEnd: https://pieceofcakebakerybackend-agbkfxenccbbh5gg.centralus-01.azurewebsites.net/
+- BackEnd: https://pieceofcakebakerybackend-agbkfxenccbbh5gg.centralus-01.azurewebsites.net/
 
 # How to Run the Project Locally
 
