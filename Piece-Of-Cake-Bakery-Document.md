@@ -54,6 +54,12 @@ Each table contains 5-10 example user records based on inputs for login/registra
 
 Screenshots of each data table showing at least three examples
 
+Users: ![image](https://github.com/user-attachments/assets/bdf9bfea-a09f-4489-a224-bd40a205da9c)
+
+Cake Orders: ![image](https://github.com/user-attachments/assets/77a3f4c7-be1c-4989-935a-7f9df797ce1b)
+
+Delivery Addresses: ![image](https://github.com/user-attachments/assets/531984ef-2bd2-4da4-bae5-0f47f583209e)
+
 
 # API Routes
 - ordersRoute: Handles the user delivery address
