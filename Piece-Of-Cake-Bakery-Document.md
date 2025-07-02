@@ -52,6 +52,8 @@ Welcome to the official GitHub repository for the Piece of Cake Bakery project! 
 
 Each table contains 5-10 example user records based on inputs for login/registration, cake order details, and delivery address details.
 
+Screenshots of each data table showing at least three examples
+
 
 # API Routes
 - ordersRoute: Handles the user delivery address
